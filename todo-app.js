@@ -71,8 +71,10 @@ document.querySelector('#divSearch').addEventListener('input',(e)=>{
 });
 
 document.querySelector('#buttonAdd').addEventListener('click',() => {
-    const inputAdd = document.querySelector('#inputAdd');
-    addTodo(inputAdd.value,true);
+    const text = document.querySelector('#inputAdd').value;
+    const isCompleted = document.querySelector('#inputIsCompleted').value === 'true';
+    console.log(isCompleted);
+    addTodo(text,isCompleted);
 });
 
 
