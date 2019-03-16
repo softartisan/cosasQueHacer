@@ -1,0 +1,38 @@
+.container{
+    width:30%;
+    float: left;
+    border-style: solid;
+    margin: 10px;
+    padding: 5px; 
+}
+.list{
+    width:30%;
+    height:500px;
+    float: left;
+    border-style: solid;
+    margin: 10px; 
+    padding: 5px; 
+    overflow-y: scroll;
+}
+
+.titulo{
+    text-decoration: underline;
+    text-align: center;
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+  }
+
+  .completed{
+    width: 35%;
+    background-color:green;
+  }
+
+  .notCompleted{
+    width: 35%;
+    background-color:red;
+  }
+
+  .text{
+    font-weight: bold;  
+  }
