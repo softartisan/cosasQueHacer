@@ -11,20 +11,21 @@
 <body>
     <h1 class="titulo">Cosas que hacer App</h1>
 
-    <div class="list" id="divTodo">
+    <div class="listContainer" id="divTodo">
+        <div>
             <h2>Lista de cosas que hacer</h2>
+        </div>
+        <div class ="list" id="listTodo">
+
+        </div>
     </div>
 
-    <div class="container" id="divSearch">
-        <h2>Buscar</h2>
-        <input id="searchText" type="text" placeholder="Search a todo">
-    </div>
-
+    
     <div class="container" id="divAdd">
         <h2>Agregar</h2>
         <div>
         <label for="inputAdd">Actividad</label>
-        <input id="inputAdd" type="text" placeholder="">
+        <input id="inputAdd" type="text">
         </div>
         <div>
             <label>Completa</label>
@@ -41,6 +42,12 @@
         <button id="buttonAdd">Agregar</button>
 
     </div>
+
+    <div class="container" id="divSearch">
+            <h2>Buscar</h2>
+            <input id="searchText" type="text">
+        </div>
+    
 
     <script src="todo-app.js"></script>
 </body>

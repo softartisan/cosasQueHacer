@@ -1,18 +1,23 @@
 .container{
     width:30%;
+    height: 150px;
     float: left;
     border-style: solid;
     margin: 10px;
     padding: 5px; 
 }
-.list{
+.listContainer{
     width:30%;
     height:500px;
     float: left;
     border-style: solid;
     margin: 10px; 
     padding: 5px; 
+}
+
+.list{
     overflow-y: scroll;
+    height:400px;
 }
 
 .titulo{

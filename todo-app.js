@@ -36,12 +36,12 @@ const insertTodos = (todos) => {
         li.appendChild(pText);
         li.appendChild(pCompleted);
         ul.appendChild(li);
-        document.querySelector('#divTodo').appendChild(ul);
+        document.querySelector('#listTodo').appendChild(ul);
     });
 }
 
 const removeTodos = () =>{
-    const lis = document.querySelectorAll('#divTodo li');
+    const lis = document.querySelectorAll('#listTodo li');
     lis.forEach((li)=>{
         li.remove();
     });
@@ -73,7 +73,7 @@ document.querySelector('#divSearch').addEventListener('input',(e)=>{
 document.querySelector('#buttonAdd').addEventListener('click',() => {
     const text = document.querySelector('#inputAdd').value;
     const isCompleted = document.querySelector('#inputIsCompleted').value === 'true';
-    console.log(isCompleted);
+    document.querySelector('#inputAdd').value ='';
     addTodo(text,isCompleted);
 });
 
